@@ -1,5 +1,5 @@
-import FormButton from '@/components/FormButton';
-import FormInput from '@/components/FormInput';
+import FormButton from '@/components/Button';
+import Input from '@/components/Input';
 
 const SMSLogin = () => {
   return (
@@ -9,8 +9,8 @@ const SMSLogin = () => {
         <h2 className="text-xl">Verify your phone number.</h2>
       </div>
       <form className="flex flex-col gap-3">
-        <FormInput type="number" placeholder="Phone number" required />
-        <FormInput type="number" placeholder="Verification code" required />
+        <Input type="number" placeholder="Phone number" required />
+        <Input type="number" placeholder="Verification code" required />
         <FormButton>Verify</FormButton>
       </form>
     </div>
